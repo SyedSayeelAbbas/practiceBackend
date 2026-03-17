@@ -20,6 +20,12 @@ app.get("/login",(req,res)=>{
   res.send("<h1>Welcome to the Login Page</h1>")
 }) 
 
+app.get("/json",(req,res)=>{
+  res.json({
+    user:"sayeel"
+  })
+})
+
 app.listen(port,()=>{
   console.log("Server is Running Successfully on Port 3000")
 })
